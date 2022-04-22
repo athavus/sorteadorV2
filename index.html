@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador V2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!--ROBOTO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="title">
+        <h1>
+            Sorteador
+        </h1>
+    </div>
+
+    <div id="sort">
+        <label class="line" id="numSort" for="">
+            Sortear <input id="num" oninput="this.value = this.value > 100 ? 100 : Math.abs(this.value)" min="1" max="100" type="number"> números
+        </label>
+        
+        <label class="line" id="intervalo" for="">
+            Número(s) entre <input oninput="this.value = this.value > 998 ? 998 : Math.abs(this.value)" id="inicioInt" type="number"> e 
+            <input oninput="this.value = this.value > 1000 ? 1000 : Math.abs(this.value)" id="finalInt" type="number">
+        </label>
+        <br>
+        <label id="botao" class="line" for="">
+            <button onclick="sortear()" id="sortear">
+                Sortear!
+            </button>
+        </label>
+
+        <label for="">
+            Números Sorteados: <input id="nums" readonly="true" type="text">
+        </label>
+    </div>
+</body>
+</html>

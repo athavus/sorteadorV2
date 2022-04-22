@@ -1,0 +1,66 @@
+/*CSS DO BODY DO PROGRAMA*/
+body {
+    background-color: rgb(51, 51, 51); color: white;
+}
+
+/*CSS DO TÍTULO DO PROGRAMA*/
+#title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 5%;
+    font-size: larger;
+}
+
+label {
+    display: block;
+}
+
+/*CSS DA ESTRUTURA DAS LINHAS*/
+#sort {
+    text-align: center;
+    font-size: 25px;
+}
+
+/*CSS DOS INPUTS*/
+input {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 70px;    
+    border-radius: 5px;
+    outline: none;
+    border: 0 none;
+    font-size: 20px;
+    padding: 5px 5px 5px 10px;
+}
+
+/*CSS DAS LINHAS DO PROGRAMA*/
+.line {
+    margin-bottom: 20px;
+}
+
+/*CSS DO BOTÃO DE SORTEAR*/
+#sortear {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+    border: none;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+/*EFEITO CSS DE SOMBREAMENTO DO BOTÃO DE SORTEAR*/
+#sortear:hover {
+    box-shadow: 0 0 40px 40px rgb(94, 94, 94) inset;
+}
+
+/*CSS DO INPUT COM OS NÚMEROS SORTEADOS*/
+#nums {
+    cursor: auto;
+    width: 150px;
+}
